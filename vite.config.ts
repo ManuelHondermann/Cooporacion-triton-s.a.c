@@ -4,9 +4,11 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // El base debe coincidir exactamente con el nombre de tu repo en GitHub para subcarpetas
+  // Este valor DEBE ser exactamente el nombre de tu repositorio en GitHub
   base: '/Cooporacion-triton-s.a.c/',
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false
   }
 });
