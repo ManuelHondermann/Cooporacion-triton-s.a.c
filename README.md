@@ -1,11 +1,25 @@
-<div align="center">
+# Corporación Internacional Tritón S.A.C.
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Este es el repositorio oficial del sitio web corporativo de **Tritón S.A.C.**, empresa líder en ingeniería de suelos, demolición técnica y movimiento de tierras en Perú.
 
-  <h1>Built with AI Studio</h2>
+## 🏗️ Sobre el Proyecto
+El sitio ha sido desarrollado utilizando tecnologías modernas de frontend:
+- **React 19**: Estructura de componentes.
+- **Tailwind CSS**: Estilizado industrial y profesional.
+- **Lucide React**: Iconografía técnica.
+- **ESM Importmaps**: Gestión de módulos nativa del navegador (sin necesidad de procesos de compilación complejos).
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 📂 Estructura de Archivos
+- `index.html`: Punto de entrada con configuración de estilos y módulos.
+- `App.tsx`: Contiene toda la lógica de rutas, secciones y componentes de la web.
+- `index.tsx`: Renderizado de la aplicación React.
+- `metadata.json`: Configuración técnica del proyecto.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🚀 Despliegue
+El sitio está configurado para desplegarse automáticamente mediante **GitHub Pages**.
 
-</div>
+## 📞 Contacto
+- **Empresa:** Tritón S.A.C.
+- **Teléfono:** +51 927 571 365
+- **Ubicación:** Villa El Salvador, Lima, Perú.
+- **Sede Operativa:** Concretera Graocon.
