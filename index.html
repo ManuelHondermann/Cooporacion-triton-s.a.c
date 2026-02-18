@@ -64,13 +64,6 @@
             transform: scale(1.1);
             background-color: #128c7e;
         }
-        .animate-reveal {
-            animation: reveal 1s ease-out forwards;
-        }
-        @keyframes reveal {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
 <script type="importmap">
 {
@@ -87,7 +80,6 @@
 </script>
 </head>
 <body class="selection:bg-[#e67e22] selection:text-white">
-    <!-- Pantalla de Carga -->
     <div id="loading" class="loading-screen">
         <div class="loader"></div>
         <p class="font-industrial text-[10px]">Cargando Tritón S.A.C.</p>
@@ -95,19 +87,18 @@
 
     <div id="root"></div>
     
-    <!-- Entrada principal de la aplicación (Vite la transformará en JS) -->
+    <!-- Vite procesará este archivo correctamente con base '/' -->
     <script type="module" src="/index.tsx"></script>
 
-    <!-- Failsafe para la pantalla de carga -->
     <script>
         window.addEventListener('load', () => {
             setTimeout(() => {
                 const loader = document.getElementById('loading');
-                if (loader && loader.style.opacity !== '0') {
+                if (loader) {
                     loader.style.opacity = '0';
                     setTimeout(() => loader.remove(), 500);
                 }
-            }, 2000);
+            }, 1500);
         });
     </script>
 </body>
