@@ -9,7 +9,8 @@ import {
   AlertTriangle, HardHat, Navigation, Mountain, Droplets,
   Search, Info, FileCheck, Building2, Truck, Plus, History,
   Route as RouteIcon, Cog, Zap, Activity, ShieldPlus, Layers, Cpu,
-  ExternalLink, MousePointer2, Pickaxe, Waves, Factory, Sun, Trophy, Trash2
+  ExternalLink, MousePointer2, Pickaxe, Waves, Factory, Sun, Trophy, Trash2,
+  MessageCircle
 } from 'lucide-react';
 
 // --- Utilidades ---
@@ -118,6 +119,17 @@ const Header = () => {
     </header>
   );
 };
+
+const WhatsAppBtn = () => (
+  <a 
+    href="https://wa.me/51927571365" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="whatsapp-btn shadow-2xl"
+  >
+    <MessageCircle size={30} fill="currentColor" />
+  </a>
+);
 
 const SectionHeading = ({ title, label, centered = false, dark = false }: { title: string, label: string, centered?: boolean, dark?: boolean }) => (
   <div className={`mb-16 ${centered ? 'text-center' : ''}`}>
@@ -619,6 +631,7 @@ const App = () => (
   <Router>
     <ScrollToTop />
     <ScrollProgress />
+    <WhatsAppBtn />
     <div className="flex flex-col min-h-screen">
       <Header />
       <div className="flex-grow pt-4">
