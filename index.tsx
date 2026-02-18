@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
+import App from './App'; // Eliminada la extensión .tsx para cumplir con las reglas de TS
 
 const container = document.getElementById('root');
 
