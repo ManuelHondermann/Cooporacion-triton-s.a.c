@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // Este valor DEBE ser exactamente el nombre de tu repositorio en GitHub
-  base: '/Cooporacion-triton-s.a.c/',
+  // Para Vercel y la mayoría de servidores, el base debe ser '/'
+  base: '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
